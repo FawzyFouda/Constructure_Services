@@ -1,0 +1,1221 @@
+:root{
+    --yel:#FFCB0F
+}
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.container{
+    margin: 0 15px;
+}
+
+main > header{
+    display: none;
+}
+
+nav{
+    background-color: #222533;
+}
+nav .nav{
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+nav .nav input:checked + .navlinks{
+    display: block;
+}
+.navlinks{
+    display: flex;
+    flex-direction: column;
+    display: none;
+    width: 100%;
+    text-align: center;
+    font-size: 16px;
+}
+.logo{
+    display: flex;
+    padding:10px 0;
+    width: 50%;
+}
+nav .logo p{
+    color: #FFF;
+    font-size: 10px;
+    width: 100%;
+    text-align: start;
+}
+nav .logo p span:first-of-type{
+    color: #FFF;
+    font-size: 15px;
+    font-weight: 900;
+    font-style: italic;
+}
+nav .logo p span:last-of-type{
+    color: var(--yel);
+    font-size: 15px;
+    font-weight: 900;
+    font-style: italic;
+}
+nav label{
+    display: flex;
+    align-content: flex-end;
+}
+nav label i{
+    color: #FFF;
+    font-size: 20px;
+    cursor: pointer;
+    transition: all 0.5s ease;
+}
+nav label i:hover{
+    color: var(--yel);
+}
+nav input{
+    display: none;
+    cursor: pointer;
+}
+.navlinks a{
+    text-decoration: none;
+    padding: 8px;
+    display: inline-block;
+    color: var(--yel);
+    font-weight: 700;
+    width: 100%;
+    box-shadow: inset 0px 0px 0px #fff6;
+    text-transform: capitalize;
+}
+#banner{
+    background-image: url('/images/banner.jpg');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    box-shadow:inset 0 0 0 2000px rgb(0 0 0 / 55%);
+    color: #FFF;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-bottom: 50px;
+}
+#banner .content {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 80px;
+    margin-top: 80px;
+    flex-direction: column;
+}
+#banner .content h2{
+    text-align: center;
+}
+#banner .content h2:first-of-type{
+    font-size: 12px;
+    font-weight: 500;
+    width: 100%;
+    
+}
+#banner .content h2:nth-of-type(2){
+    font-size: 28px;
+}
+#banner .content h2:nth-of-type(3){
+    font-size: 29px;
+    color: var(--yel);
+}
+#banner .content h2:nth-of-type(2),
+#banner .content h2:last-of-type{
+    text-transform: uppercase;
+    width: 100%;
+}
+#banner p{
+    font-size: 14px;
+    width: 90%;
+    margin: 0 auto;
+}
+#banner .links{
+    margin-top: 20px;
+    width: 100%;
+}
+#banner .links a{
+    color: var(--yel);
+    text-decoration: none;
+    background-color: #000;
+    font-size: 10px;
+    font-weight: 700;
+    padding: 6px 5px;
+    border: 1px solid var(--yel);
+    text-transform: uppercase;
+    margin-top: 10px;
+
+}
+/* -----------------------------------------------------------Section 2 Welcome TO Our Company -------------------------------------- */
+
+.sec2{
+    text-align: center;
+    margin-bottom: 50px;
+}
+.sec2 article .content h2{
+    color: var(--yel);
+    margin-bottom: 3px;
+    font-family: system-ui;
+}
+.sec2 article img{
+    width: 60%;
+    margin-bottom: 35px;
+}
+.sec2 article .content p{
+    margin-bottom: 30px;
+}
+.sec2 article .content a{
+    text-decoration: none;
+    color: #FFF;
+    background-color: var(--yel);
+    border-radius: 6px;
+    padding: 5px;
+    font-size: 12px;
+}
+/* -----------------------------------------------------------Section 3 Welcome TO Our Company -------------------------------------- */
+.sec3{
+    background-image: url('/images/bg4.jpg');
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+    text-align: center;
+    margin-bottom: 50px;
+    box-shadow: inset 0 2000px rgb(0,0,0,0.3)
+}
+.sec3 h2{
+    color: var(--yel);
+    margin-bottom: 3px;
+    padding-top: 50px;
+}
+.sec3 p{
+    color: #FFF;
+} 
+.sec3 .content{
+    padding: 24px 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 40px;
+}
+.sec3 .content article{
+    border: 1px solid transparent;
+    border-radius: 6px;
+    max-width: 240px;
+    text-align: center;
+    margin-top: 80px;
+    background-color: rgba(0, 0, 0, 0.5);
+    padding: 12px;
+    margin: 28px;
+}
+.sec3 .content article div:first-of-type{
+    width: 120px;
+    height: 120px;
+    overflow: hidden;
+    border-radius: 100%;
+    margin: -60px auto 0;
+    background-color: var(--yel);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.sec3 .content article div:first-of-type img{
+    background-color: var(--yel);
+    
+}
+.sec3 .content article div:last-of-type{
+    padding-bottom: 20px;
+}
+.sec3 .content article div:last-of-type h3{
+    color: var(--yel);
+    padding-top: 22px;
+    font-size: 15px;
+    padding-bottom: 12px;
+}
+.sec3 .content article div:last-of-type p{
+    color: #FFF;
+    font-size: 16px;
+}
+/* -----------------------------------------------------------Section 4 Our Service  -------------------------------------- */
+.sec4 h2{
+    color: var(--yel);
+    text-align: center;
+    margin-bottom: 50px;
+}
+.sec4 .fig figure{
+    margin-top: 30px;
+}
+.sec4 .fig figure div{
+    position: relative;
+}
+.sec4 .fig figure img{
+    width: 100%;
+    display: block;
+}
+.sec4 .fig figure h3{
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    text-align: center;
+    color: #FFF;
+    padding: 20px;
+    background-color: rgba(0, 0, 0, 0.6);
+}
+.sec4 .fig figure figcaption{
+    
+}
+.sec4 .fig figure figcaption p{
+    margin: 15px 0;
+    text-align: justify;
+}
+.sec4 .fig figure figcaption a{
+    text-decoration: none;
+    color: #FFF;
+    background-color: var(--yel);
+    border-radius: 6px;
+    padding: 5px;
+    font-size: 12px;
+    margin-bottom: 20px;
+}
+/* -----------------------------------------------------------Section 5 Gallery  -------------------------------------- */
+.sec5{
+    background-image: url('/images/bg2.jpg');
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    box-shadow: inset 0 0 0 2000px rgba(97, 88, 88, 0.8);
+    text-align: center;
+    margin-top: 50px;
+}
+.sec5 header{
+    text-align: center;
+    padding-top: 50px;
+}
+.sec5 header h2{
+    color: #FFF;
+    margin-bottom: 20px;
+}
+.sec5 header p{
+    color: #FFF;
+    margin-bottom: 20px;
+}
+.sec5 .gallery{
+    margin-top: 50px;
+}
+.sec5 .gallery .showall{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.sec5 .gallery .showall .list > img{
+    width: 290px;
+}
+.sec5 .gallery .showall .list{
+    margin-top: 20px;
+}
+.sec5 .gallery .showall label{
+    color: #FFF;
+}
+.sec5 .gallery .showall label:first-of-type{
+    background-color: rgba(0, 0, 0, 0.6);
+    padding: 7px;
+    border-radius: 10px;
+    font-size: 12px;
+    color: #FFF;
+    cursor: pointer;
+}
+.sec5 .gallery .building label,
+.sec5 .gallery .interior label,
+.sec5 .gallery .isolation label,
+.sec5 .gallery .plumbing label{
+    display: block;
+    margin-bottom: 20px;
+    background-color: rgba(0, 0, 0, 0.6);
+    width: 25%;
+    padding: 7px;
+    border-radius: 10px;
+    font-size: 12px;
+    color: #FFF;
+    margin: 15px auto;
+    cursor: pointer;
+}
+.sec5 .gallery .building ul,
+.sec5 .gallery .interior ul,
+.sec5 .gallery .isolation ul,
+.sec5 .gallery .plumbing ul{
+    list-style-type: none;
+}
+.sec5 .gallery .building ul li:first-of-type img{
+    width: 290px;
+}
+/* -----------------------------------------------------------Section 6 Customer Service  -------------------------------------- */
+.sec6{
+    background-image: url('/images/bg3.jpg');
+    background-position: center center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    text-align: center;
+    padding-top: 50px;
+    margin-bottom: 20px;
+}
+.sec6 h2{
+margin-bottom: 20px;
+}
+.sec6 header{
+    margin-bottom: 50px;
+}
+.sec6 .qoutes{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.q{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 50px;
+    width: 70%;
+}
+.sec6 .qoutes .q article{
+    position: relative;
+    background-color: #E5E5E5;
+    display: flex;
+    justify-content: center;
+    margin-bottom: 20px;
+}
+.sec6 .qoutes .q:nth-of-type(2) article{
+    background-color: var(--yel);
+}
+.sec6 .qoutes .q article img:first-of-type{
+    width: 44px;
+    height: 27px;
+    margin-left: 20px;
+    margin-top: 20px;
+}
+.sec6 .qoutes .q article p{
+    width: 80%;
+    text-align: justify;
+    padding: 25px 20px;
+    font-size: 14px;
+}
+.sec6 .qoutes .q article img:last-of-type{
+    position: absolute;
+    width: 25px;
+    height: 12px;
+    bottom: -12px;
+}
+.sec6 .qoutes .q div{
+
+}
+.sec6 .qoutes .q div img{
+    width: 15%;
+}
+/* ---------------------------------------------------------- Section 7 Form  -------------------------------------- */
+.sec7{
+    background-color: var(--yel);
+    opacity: 0.6;
+    border-bottom: 30px solid #0e0e0e
+}
+.sec7 article{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    padding: 25px;
+}
+.sec7 article div{
+    width: 100%;
+    text-align: center;
+}
+.sec7 article div h2{}
+.sec7 article div p{
+    margin-bottom: 20px;
+}
+.sec7 article form{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.sec7 article form input{
+    margin-bottom: 20px;
+    outline: none;
+    border: none;
+    padding: 6px;
+    border-radius: 5px;
+}
+.sec7 article form input:last-of-type{
+    width: 40%;
+    background-color: #000;
+    color: #FFF;
+}
+/* ---------------------------------------------------------- Footer  -------------------------------------- */
+footer{
+    font-family: serif !important;
+    padding-top: 50px;
+    background-image: url('/images/bg2.jpg');
+    background-position: center center;
+    background-repeat: no-repeat;
+    box-shadow: inset 0 2000px rgba(0 0 0 / 90%);
+    text-align: center;
+    color: rgb(255, 255, 255);
+    background-size: cover;
+}
+footer section{
+}
+footer section .about{
+    padding-bottom: 50px;
+}
+footer section .about .social{
+    display: flex;
+    justify-content: center;
+
+}
+footer section .about .social{
+    justify-content: center;
+}
+footer section .about .social a{
+    display: flex;
+    width: 35px;
+    height: 35px;
+}
+footer section .about .social a i{
+    width: 35px;
+    text-align: center;
+}
+footer section .about h2{
+    font-size: 18px;
+    font-weight: 400;
+    margin-bottom: 25px;
+}
+footer section .about p:first-of-type{
+    font-size: 12px;
+    margin-bottom: 15px;
+    color: rgb(255 255 255 / 57%);
+}
+footer section .about p:last-of-type{
+    font-size: 12px;
+    margin-bottom: 20px;
+    color: rgb(255 255 255 / 57%);
+}
+footer section .about p span{
+    font-weight: 900;
+    font-size: 19px;
+    color: var(--yel);
+}
+footer section .about a{
+    text-decoration: none;
+    font-size: 14px;
+    margin:0 7px;
+    border-radius: 50%;
+    background-color: var(--yel);
+    padding: 10px;
+    color: rgb(0,0,0,0.7);
+}
+footer section .explore{
+    display: flex;
+    flex-direction: column;
+}
+footer section .explore h2{
+    font-size: 18px;
+    font-weight: 400;
+    margin-bottom: 25px;
+}
+footer section .explore ul{
+    list-style-type: none;
+}
+footer section .explore ul li{
+    padding: 10px;
+}
+footer section .explore ul li a{
+    text-decoration: none;
+    color: rgb(255 255 255 / 57%);
+    margin:15px 0;
+    font-size: 12px;
+}
+footer section .post{
+    padding-top: 50px;
+    display: flex;
+    flex-direction: column;
+    color: rgb(255 255 255 / 57%);
+}
+footer section .post div{
+    display: flex;
+    justify-content: center;
+    margin-bottom: 16px;
+}
+footer section .post h2{
+    font-size: 18px;
+    font-weight: 400;
+    margin-bottom: 25px;
+    color: #FFF;
+}
+footer section .post div span{
+    font-size: 12px;
+    margin-right: 15px;
+    border: 2px solid;
+    border-radius: 50%;
+    padding: 1px;
+    width: 45px;
+    height: 45px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+footer section .post div p{
+    display: flex;
+    align-items: center;
+    font-size: 12px;
+    width: 46%;
+}
+footer section .contact{
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
+footer section .contact h2{
+    font-size: 18px;
+    font-weight: 400;
+    margin-bottom: 25px;
+}
+footer section .contact div{
+    display: flex;
+    justify-content: center;
+    margin-bottom: 20px;
+    color: rgb(255 255 255 / 57%);
+}
+footer section .contact div i{
+    margin-right: 15px;
+}
+footer section .contact div p{
+    margin-bottom: 10px;
+    font-size: 12px;
+}
+/* ---------------------------------------------------------------------media Query-------------------------------------------------- */
+@media (min-width: 768px){
+    .container{
+        width: 720px;
+        margin: 0 auto;
+    }
+    main > header{
+        background-color: var(--yel);
+    }
+    main > header section{
+        display: flex;
+    }
+    main > header section div:first-of-type span{
+        margin-right: 8px;
+    }
+    main > header section div:first-of-type{
+        display: flex;
+        width: 80%;
+    }
+    main > header section div:first-of-type p{
+        font-size: 12px;
+        padding:8px;
+    }
+    main > header section div:last-of-type{
+        display: flex;
+        justify-content: flex-end;
+        width: 20%;
+    }
+    main > header section div:last-of-type a{
+        padding: 8px;
+        color: #000;
+        font-size: 14px;
+    }
+    #banner .links a{
+        display: inline-block;
+        color: var(--yel);
+        text-decoration: none;
+        background-color: #000;
+        font-size: 10px;
+        font-weight: 700;
+        padding: 6px 5px;
+        border: 1px solid var(--yel);
+        text-transform: uppercase;
+        margin-top: 10px;
+    }
+    #banner .content h2:first-of-type{
+        font-size: 15px;
+        font-weight: 500;
+        width: 100%;
+    }
+    #banner .content h2:nth-of-type(2){
+        font-size: 37px;
+    }
+    #banner .content h2:nth-of-type(3){
+        font-size: 38px;
+    }
+    #banner p{
+        font-size: 15px;
+        width: 70%;
+    }
+    #banner .links{
+        width: 100%;
+    }
+    #banner .links a{
+        font-size: 12px;
+        font-weight: 600;
+        padding: 7px 6px;
+        margin-top: 10px;
+    }
+    /* ----------------Section 3 Welcome TO Our Company -------------------- */
+    .sec3 .content{
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-around;
+    }
+    .sec3 .content article{
+        width: 50%;
+        max-width: 218px;
+        margin: 56px;
+    }
+    .sec3 .content article div:last-of-type h3{
+        font-size: 15px;
+    }
+    .sec3 .content article div:last-of-type p{
+        font-size: 16px;
+    }
+    /*---------------------Section 4 Our Service  ---------------------- */
+
+    .sec4 .fig{
+        display: flex;
+        flex-direction: column;
+        
+    }
+    .sec4 .fig figure{
+        display: flex;
+        justify-content: space-between;
+        position: relative;
+        box-shadow: 0px 2px 7px rgb(0 0 0 / 60%)
+    }
+    .sec4 .fig figure div{
+        width: 50%;
+        position: static;
+        display: flex;
+        align-items:center;
+    }
+    .sec4 .fig figure div h3{
+        position: absolute;
+        bottom: 0;
+        right: 0;
+        top: 0;
+        text-align: center;
+        color: var(--yel);
+        padding: 1px;
+        width: 44%;
+        height: 11%;
+        box-shadow: 0px 3px 4px rgb(0 0 0 / 47%);
+        margin: 0 20px;
+    }
+    .sec4 .fig figure figcaption{
+        width: 50%;
+        background-color: rgba(0, 0, 0, 0);
+        text-align: center;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        padding: 15px;
+    }
+    .sec4 .fig figure figcaption p{
+    color: #000;
+    padding: 26px 0;
+    }
+    .sec4 .fig figure figcaption a{
+        width: 25%;
+        margin-bottom: 0;
+    }
+    .sec4 .fig figure img{
+        width: 100%;
+        display: block;
+    }
+    .sec4 .fig figure h3{
+        position: relative;
+        text-align: center;
+        color: #FFF;
+        padding: 20px;
+        background-color: rgba(0, 0, 0, 0.6);
+    }
+    /* ---------------------Section 5 Gallery  ----------------------- */
+    .sec5 .gallery .showall .list > img{
+        width: 585px;
+    }
+    /* ------------------Section 6 Customer Service  -------------------- */
+    .sec6 .qoutes{
+        align-items: center;
+    }
+    .sec6 .qoutes .q{
+        width: 80%;
+    }
+    .sec6 .qoutes .q div{
+        width: 60%;
+    }
+    /* ----------------------- Section 7 Form  ----------------------------- */
+    .sec7 article{
+        flex-wrap: nowrap;
+    }
+    .sec7 article div{
+        width: 56%;
+        text-align: center;
+    }
+    .sec7 article div p{
+        font-size: 30px;
+    }
+    .sec7 article form{
+        width: 44%;
+    }
+    .sec7 article form input:last-of-type {
+        width: 20%;
+    }
+    /* ------------------------------ Footer  --------------------------- */
+    footer section{
+        display: flex;
+        flex-wrap: wrap;
+    }
+    footer section .about{
+        width: 100%;
+    }
+    footer section .about .social{
+        justify-content: center;
+    }
+    footer section .explore{
+        width: 50%;
+    }
+    footer section .post{
+        width: 50%;
+        padding: 0;
+    }
+    footer section .contact{
+        width: 100%;
+        padding: 0;
+        padding: 50px 0;
+    }
+}
+
+@media (min-width: 992px){
+    .container {
+        width: 930px;
+        }
+        main > header{
+            background-color: var(--yel);
+            display: flex;
+            justify-content: space-between;
+        }
+        main > header section{
+            display: flex;
+        }
+        main > header section div:first-of-type{
+            display: flex;
+            width: 85%;
+        }
+        main > header section div:first-of-type p{
+            font-size: 15px;
+            padding:8px;
+        }
+        main > header section div:first-of-type span{
+            margin-right: 8px;
+        }
+        main > header section div:first-of-type span i{}
+        
+        main > header section div:last-of-type{
+            width: 15%;
+            display: flex;
+            justify-content: flex-end;
+        }
+        main > header section div:last-of-type a{
+            padding: 8px;
+            color: #000;
+        }
+        nav{
+            background-color: #222533;
+        }
+        nav label{
+            display: none;
+        }
+        .navlinks{
+            display:flex;
+            flex-direction: row;
+            width: 50%;
+        }
+        nav .nav input:checked + .navlinks{
+            display:flex;
+            flex-direction: row;
+            width: 50%;
+        }
+        .navlinks a{
+            color: #FFF;
+            font-size: 14px;
+        }
+    #banner .links a{
+        display: inline-block;
+        color: var(--yel);
+        text-decoration: none;
+        background-color: #000;
+        font-size: 10px;
+        font-weight: 700;
+        padding: 6px 5px;
+        border: 1px solid var(--yel);
+        text-transform: uppercase;
+        margin-top: 10px;
+    }
+    #banner .content h2:first-of-type{
+        font-size: 30px;
+        font-weight: 100;
+    }
+    #banner .content h2:nth-of-type(2){
+        font-size: 56px;
+        font-weight: 900;
+    }
+    #banner .content h2:nth-of-type(3){
+        font-size: 60px;
+    }
+    #banner p{
+        font-size: 16px;
+        width: 73%;
+    }
+    #banner .links{
+        width: 100%;
+    }
+    #banner .links a{
+        font-size: 14px;
+        font-weight: 600;
+        padding: 8px 8px;
+        margin-top: 10px;
+    }
+    /* ----------Section 2 Welcome TO Our Company ---------- */
+    .sec2{
+        text-align: justify;
+    }
+    .sec2 article{
+        display: flex;
+        flex-direction: row-reverse;
+    }
+    .sec2 article img{
+        width: 45%;
+    }
+    .sec2 article .content{
+        width: 52%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+    .sec2 article .content h2{
+        font-size: 34px;
+    }
+    .sec2 article .content p:first-of-type{
+        font-weight: 900;
+        font-size: 20px;
+    }
+    .sec2 article .content a{
+        display: block;
+        text-align: center;
+        padding: 10px;
+        font-size: 14px;
+        width: 25%;
+    }
+    /* -----------Section 3 Welcome TO Our Company ----------- */
+    .sec3 .content{
+        display: flex;
+        flex-direction: row;
+    }
+    .sec3 .content article{
+        width: 25%;
+        max-width: 218px;
+        margin: 56px;
+    }
+    .sec3 .content article div:last-of-type h3{
+        font-size: 15px;
+    }
+    .sec3 .content article div:last-of-type p{
+        font-size: 16px;
+    }
+    /*---------------------Section 4 Our Service  ---------------------- */
+    .sec4 h2{
+        color: var(--yel);
+        text-align: center;
+        margin-bottom: 50px;
+    }
+    .sec4 .fig{
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-between;
+    }
+    .sec4 .fig figure{
+        display: flex;
+        justify-content:flex-start;
+        position: static;
+        box-shadow: none;
+        margin-top: 30px;
+        flex-wrap: wrap;
+        width: 31.333333333333%;
+    }
+    .sec4 .fig figure div{
+        width: 100%;
+        position: relative;
+    }
+    .sec4 .fig figure div h3{
+        position: absolute;
+        bottom: 0;
+        width: 100%;
+        text-align: center;
+        color: #FFF;
+        padding: 20px;
+        background-color: rgba(0, 0, 0, 0.6);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        top: unset;
+        margin: 0;
+    }
+    .sec4 .fig figure figcaption{
+        width: 100%;
+        justify-content: unset;
+        padding: 0;
+    }
+    .sec4 .fig figure figcaption p{
+        margin:0;
+        text-align: justify;
+    }
+    .sec4 .fig figure figcaption a{
+        padding: 9px;
+        font-size: 13px;
+        width: 37%;
+    }
+    /* ---------------------Section 5 Gallery  ----------------------- */
+    .sec5 .gallery  input,
+    .sec5 .gallery  label{
+        display: none;
+    }
+    .sec5 .gallery{
+        display: flex;
+        justify-content: center;
+    }
+    .sec5 .gallery .showall{
+        display: flex;
+        flex-direction: row;     
+    }
+    .sec5 .gallery .showall .list{
+        display: flex;
+        position: relative;
+    }
+    .sec5 .gallery .showall .list > img{
+        width: 560px;
+        height:494px;
+    }
+    .sec5 .gallery .showall .list > div{
+        display: flex;
+        flex-direction: column;
+    }
+    .sec5 .gallery .showall .list > div img{
+        margin-bottom: 14px;
+        margin-left: 14px;
+    }
+    .sec5 .gallery .showall .list > div img:nth-of-type(4){
+        position: absolute;
+        left: 269px;
+        bottom: 14px;
+        margin: 0;
+    }
+    .sec5 .gallery .building,
+    .sec5 .gallery .interior,
+    .sec5 .gallery .isolation,
+    .sec5 .gallery .plumbing{
+        display: none;
+    }
+    /* ------------------Section 6 Customer Service  -------------------- */
+    .sec6 .qoutes{
+        flex-direction: row;
+        justify-content: space-between;
+    }
+    .sec6 .qoutes .q{
+        width: 32.33333333333333%;
+    }
+    .sec6 .qoutes .q div{
+        width: 90%;
+    }
+    /* -------------------------- Section 7 Form  --------------------- */
+    .sec7 article form{
+        flex-direction: row;
+        flex-wrap: wrap;
+    }
+    .sec7 article form input{
+        padding: 8px;
+    }
+    .sec7 article form input:first-of-type{
+        width: 37%;
+    }
+    .sec7 article form input:nth-of-type(2){
+        width: 37%;
+        margin-left: 14px;
+    }
+    .sec7 article form input:nth-of-type(3){
+        width: 55%;
+    }
+    .sec7 article form input:last-of-type{
+        margin-left: 14px;
+    }
+    /*------------------------------ Footer  --------------------------- */
+    footer section{
+        display: flex;
+        flex-wrap: wrap;
+        text-align: start;
+    
+    }
+    footer section .about{
+        width: 25%;
+        
+    }
+    footer section .about .social{
+        justify-content: flex-start;
+    }
+    footer section .explore{
+        width: 25%;
+        align-items: center;
+    }
+    footer section .post{
+        width: 25%;
+        padding: 0;
+    }
+    footer section .post div{
+        justify-content: flex-start;
+    }
+    footer section .post div p{
+        font-size: 12px;
+        width: 55%;
+    }
+    footer section .post div span{
+        text-align: center;
+    }
+    footer section .contact{
+        width: 25%;
+        padding: 0;
+    }
+    footer section .contact div{
+        justify-content: flex-start;
+    }
+}
+
+@media (min-width:1200px){
+    .sec3 .content article{
+        margin: 33px;
+    }
+    /* ---------------------Section 5 Gallery  ----------------------- */
+    .sec5 .gallery{
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+    }
+    .sec5 .gallery .showall{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;     
+    }
+    .sec5 .gallery .showall label:first-of-type{
+        background-color: rgba(0, 0, 0, 0.6);
+        padding: 7px;
+        border-radius: 10px;
+        font-size: 12px;
+        color: #FFF;
+        cursor: pointer;
+    }
+    .sec5 .gallery .building label{
+        order: 1;
+    }
+    .sec5 .gallery .interior label{
+        order:2
+    }
+    .sec5 .gallery .isolation label{
+        order: 3;
+    }
+    .sec5 .gallery .plumbing label{
+        order: 4;
+    }
+    .sec5 .gallery .showall .list{
+        
+    }
+
+    .sec5 .gallery .showall label,
+    .sec5 .gallery .building label,
+    .sec5 .gallery .interior label,
+    .sec5 .gallery .isolation label,
+    .sec5 .gallery .plumbing label{
+        display: flex;
+        margin: 0 12px;
+    }
+    .sec5 .gallery .showall .list{
+        position: static;
+        display: flex;
+        justify-content: space-evenly;
+        width: 100%;
+        margin: 50px 0;
+    }
+    .sec5 .gallery .showall .list > img{
+        width: 46%;
+        height:auto;
+    }
+    .sec5 .gallery .showall .list > div{
+        display: flex;
+        flex-flow: row wrap;
+        width: 54%;
+        justify-content: space-evenly;
+    }
+    .sec5 .gallery .showall .list > div img{
+        width: 48%;
+        margin-bottom: 7px;
+        margin-left: 0;
+    }
+    .sec5 .gallery .showall .list > div img:nth-of-type(3){
+        position: static;
+        margin-bottom: 0;
+        margin-left: 0;
+    }
+    .sec5 .gallery .showall .list > div img:nth-of-type(4){
+        position: static;
+        margin-bottom: 0;
+        margin-left: 0;
+        bottom: unset;
+        left: unset;
+    }
+    .sec5 .gallery .building,
+    .sec5 .gallery .interior,
+    .sec5 .gallery .isolation,
+    .sec5 .gallery .plumbing{
+        display: flex;
+    }
+    .sec5 .gallery .building ul,
+    .sec5 .gallery .interior ul,
+    .sec5 .gallery .isolation ul,
+    .sec5 .gallery .plumbing ul{
+        display: none;
+    }
+    /* ------------------Section 6 Customer Service  -------------------- */
+    .sec6 .qoutes .q{
+        width: 26.33333333333333%;
+    }
+    .sec6 .qoutes .q div{
+        width: 100%;
+    }
+
+    footer section .explore ul li::before { 
+        content: '\25ba';
+        padding-right: 8px;
+        font-size: 10px;
+}
+
+}
+
+@media (min-width: 768px) and (min-width: 1200px){
+    .container {
+        width: 1140px;
+    }
+    /* ----------Section 2 Welcome TO Our Company ---------- */
+    .sec2 article .content h2{
+        font-size: 40px;
+        font-weight: 900;
+    }
+    .sec2 article .content p:first-of-type{
+        font-weight: 900;
+        font-size: 23px;
+    }
+}
