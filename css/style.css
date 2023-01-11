@@ -147,6 +147,7 @@ nav input{
     border: 1px solid var(--yel);
     text-transform: uppercase;
     margin-top: 10px;
+    width: 120px;
 
 }
 /* -----------------------------------------------------------Section 2 Welcome TO Our Company -------------------------------------- */
